@@ -1,0 +1,5 @@
+programming paradigms in javascript
+
+javascript is a multi paradigm programming language
+
+in this post i am going to investigate the advantages of different programming styles on the readablity and extensibility of a simple game programmed in 3 different ways and compare what advantages these programming styles give

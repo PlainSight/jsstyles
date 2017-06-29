@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+
+<style type="text/css">
+	.square {
+		width: 100px;
+		height: 100px;
+		background-color: #eee;
+		float: left;
+		margin: 5px;
+		font-size: 90px;
+		text-align: center;
+	}
+	.row {
+		clear: both;
+	}
+	.clearfix {
+		clear: both;
+	}
+</style>
+
+
+<div class="board">
+	<div class="row">
+		<div class="square js-x0y0"></div>
+		<div class="square js-x1y0"></div>
+		<div class="square js-x2y0"></div>
+	</div>
+	<div class="row">
+		<div class="square js-x0y1"></div>
+		<div class="square js-x1y1"></div>
+		<div class="square js-x2y1"></div>
+	</div>
+	<div class="row">
+		<div class="square js-x0y2"></div>
+		<div class="square js-x1y2"></div>
+		<div class="square js-x2y2"></div>
+	</div>
+</div>
+<div class="clearfix"></div>
+
+<div class="js-messages"></div>
+
+<script type="text/javascript" src="objective.js"></script>
+
+</body>
+</html>
