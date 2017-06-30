@@ -21,13 +21,15 @@
 	}
 
 	Player.prototype.analyseBoard = function(board) {
+		var validMoves = [];
 		for(var x = 0; x <= 2; x++) {
 			for(var y = 0; y <= 2; y++) {
 				if(board.squares[x][y].owner === null) {
-					return board.squares[x][y];
+					validMoves.push(board.squares[x][y]);
 				}
 			}
 		}
+		return validMoves[Math.floor(validMoves.length * Math.random())];
 	}
 
 	function Move(square, player) {

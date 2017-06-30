@@ -1,5 +1,11 @@
 programming paradigms in javascript
 
-javascript is a multi paradigm programming language
+JavaScript is a multi paradigm programming language
 
-in this post i am going to investigate the advantages of different programming styles on the readablity and extensibility of a simple game programmed in 3 different ways and compare what advantages these programming styles give
+Recently a friend of mine has been learning programming and came to me with a question regarding implementing a game of tic tac toe in JavaScript. While the question was related to some confusing behavior caused by nested associated arrays, it made me think about how I would best approach structuring a simple game without the aid of the frameworks I usually use with JavaScript.
+
+In this post I experiment implementing a game using two paradigms - Functional and Object orientated programming  and compare the difficulties / advantages I expierenced when writing in both styles. While I wasn't fully satisfied with either implementation I do feel like I learnt a bit more around working with vanilla JavaScript as well as some limitations which may clash with the language design.
+
+The first version of the game I implemented was the object oriented style. I immediately created several classes for objects in the game. A player class which stored some information about who controlled the player and which piece 'X' or 'O' they had, A board class which stored the 9 cells of the game and a Square class which stored whether it had been Naughted or Crossed as well as handling some interaction. I then wrapped the core logic of the game in a Game class (this handled the various phases of the game).
+
+Some initial difficulties I ran into when implementing this game was determining how to handle player interaction. As JavaScript interactions are typically handled via an asyncronous function which is triggered by the runtime when a user action occurs, I had trouble reconciling this 
